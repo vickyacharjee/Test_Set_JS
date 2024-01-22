@@ -6,11 +6,9 @@ const mySever=http.createServer((req,res)=>{
     // console.log('Recieved new request');
     // console.log(req.headers);
 
-    const log='vicky';
-
-    fs.appendFile('log.txt','log',(error,data)=>{
-        res.end('Hello vicky from prot:8003 server---')
-
+    const log=`${Date.now().toLocaleString()} as Request Recieved \n`;
+    fs.appendFile('log.txt',log,(error,data)=>{
+        res.end('Hello vicky from port:8003')
     })
 
 });
