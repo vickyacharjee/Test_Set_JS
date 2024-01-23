@@ -9,8 +9,30 @@ const mySever=http.createServer((req,res)=>{
 
     const log=`${Date.now().toString()} as Request Recieved in 8000 and url seek for ${req.url} \n`;
     fs.appendFile('log.txt',log,(error,data)=>{
+
+
+         const htmlContent = `
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Embedded HTML</title>
+      </head>
+      <body>
+        <h1>Hello, this is embedded HTML!</h1>
+         h1{
+            background-color: aqua;
+        }
+      </body>
+      </html>
+    `;
+
+
+
+
            switch (req.url) {
-            case '/': res.end('This is home for Server')
+            case '/': res.end('This is HOME Server')
                 break;
         
             case '/about': res.end('This is about Section')
@@ -18,9 +40,12 @@ const mySever=http.createServer((req,res)=>{
 
              case '/home': res.end('This is HOME Section')
                 break;    
-            
+          
+             case '/vicky': res.end('This is vicky Section')
+                break;    
+          
             default:
-                res.end("<h1>404 Not found</h1>");
+                   res.end(htmlContent)
         }
     })
     //using switch case for the specified URL
