@@ -21,9 +21,13 @@ const mySever=http.createServer((req,res)=>{
       </head>
       <body>
         <h1>Hello, this is embedded HTML!</h1>
-         h1{
+         
+        <style>
+        
+        h1{
             background-color: aqua;
         }
+        </style>
       </body>
       </html>
     `;
