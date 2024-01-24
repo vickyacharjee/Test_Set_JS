@@ -36,13 +36,13 @@ const mySever=http.createServer((req,res)=>{
             case '/': res.end('This is DEFAULT Server')
                 break;
         
-            case '/about': res.end('This is VICKY Section')
+            case '/about': res.end('This is ABOUT Section')
                 break;
 
              case '/home': res.end('This is HOME Section')
                 break;    
           
-             case '/vicky': res.end('This is vicky Section')
+             case '/vicky': res.end('This is VICKY Section')
                 break;    
           
             default:
