@@ -1,4 +1,4 @@
-// const { log } = require('console');
+
 const http= require('http');
 const fs=require('fs');
 
@@ -9,8 +9,6 @@ const mySever=http.createServer((req,res)=>{
 
     const log=`${Date.now().toString()} as Request Recieved in 8000 and url seek for ${req.url} \n`;
     fs.appendFile('log.txt',log,(error,data)=>{
-
-
          const htmlContent = `
       <!DOCTYPE html>
       <html lang="en">
@@ -21,6 +19,8 @@ const mySever=http.createServer((req,res)=>{
       </head>
       <body>
         <h1>Hello, this is embedded HTML!</h1>
+        <h1>404 Not Found</h1>
+        
          
         <style>
         
@@ -32,14 +32,11 @@ const mySever=http.createServer((req,res)=>{
       </html>
     `;
 
-
-
-
            switch (req.url) {
-            case '/': res.end('This is HOME Server')
+            case '/': res.end('This is DEFAULT Server')
                 break;
         
-            case '/about': res.end('This is about Section')
+            case '/about': res.end('This is VICKY Section')
                 break;
 
              case '/home': res.end('This is HOME Section')

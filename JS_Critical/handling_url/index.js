@@ -27,14 +27,15 @@ console.log(myUrl);
 
 fs.appendFile('log.txt',log,(error,data)=>{
     switch (myUrl.pathname) {
+        
         case '/': res.end("This is main Main Page")
             break;
+
         case '/about': //res.end("This about Page")
-            
              const userName=myUrl.query.myname;
              const userId=myUrl.query.querId;
 
-             res.end(`Hi this is MAin page of the server and  your name is : ${userName} and ur ID is ${userId}`)
+             res.end(`Hi this is Main page of the server and  your name is : ${userName} and ur ID is ${userId}`)
              //http://localhost:8000/about?myname=vicky2_CAharjee&querId=tic+tac+toe //hence this results te putput as:: Hi this is MAin page of the server and  your name is : vicky2_CAharjee and ur ID is tic tac toe
             break;
 
@@ -43,13 +44,10 @@ fs.appendFile('log.txt',log,(error,data)=>{
             const userNameVicky=myUrl.query.name;
             const queryId=myUrl.query.qid;
             res.end(`inside Vicky's Page:: ${userNameVicky} and your query id is ${queryId}`)
-        break;
+            break;
            
-
-        default:
-             res.end("Sorry 404");
+            default:  res.end("Sorry 404 NOT FOUND");
     }
   })
 })
-
-myServer.listen(8000,()=>console.log("Server Created"))
+myServer.listen(8000,()=>console.log("Server Created"));
