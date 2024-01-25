@@ -1,0 +1,56 @@
+Method:
+GET: GET SOME RESOURCES FROM SERVER
+ADD: ADD CERTAIN RESOURCES TO THE SERVER
+PATCH: MAKE CERTAIN CHANGES TO A REASOURCES TO A SERVER
+PUT: ADDING ANY FILE TO A SERVER TYPICALLY AN IMAGE OR A PDF FILE AS EXAMPLE
+DELETE: DELETING CERTAIN REOURCES FROM THE SERVER PREMANENTLY
+
+
+STATUS CODE: 
+1XX => RANGING FROM 0 TO 99 (INFORMATION)
+2XX => RANGING FROM 0 TO 99 (SUCCESS)
+3XX => RANGING FROM 0 TO 99 (REDIRECTIONAL) THIS MEANS THAT MAYBE THE GIVEN  PATH TO REDIRECT IS WRONG OR UNMATCHABLE
+4XX => RANGING FROM 0 TO 99 (CLIENT SIDE ERROR)
+5XX => RANGING FROM 0 TO 99 (SERVERSIDE ERROR)
+
+COMMONLY STATUS CODE ARE:
+
+1xx - Informational:
+
+100 Continue
+101 Switching Protocols
+102 Processing (WebDAV; RFC 2518)
+2xx - Success:
+
+200 OK
+201 Created
+202 Accepted
+204 No Content
+206 Partial Content
+3xx - Redirection:
+
+300 Multiple Choices
+301 Moved Permanently
+302 Found (Temporary Redirect)
+304 Not Modified
+307 Temporary Redirect
+4xx - Client Error:
+
+400 Bad Request
+401 Unauthorized
+403 Forbidden
+404 Not Found
+405 Method Not Allowed
+409 Conflict
+410 Gone
+422 Unprocessable Entity (WebDAV; RFC 4918)
+429 Too Many Requests
+5xx - Server Error:
+
+500 Internal Server Error
+501 Not Implemented
+502 Bad Gateway
+503 Service Unavailable
+504 Gateway Timeout
+505 HTTP Version Not Supported
+

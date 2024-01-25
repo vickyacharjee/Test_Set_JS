@@ -142,3 +142,22 @@ A new Request is recieved at 1706095765468 & The URL Provoked at /vicky?name=vic
 A new Request is recieved at 1706095780136 & The URL Provoked at /vicky?name=vickyAcharjee&qid=22 
 A new Request is recieved at 1706095934839 & The URL Provoked at /vicky?name=vickyAcharjee&qid=22 
 A new Request is recieved at 1706096317463 & The URL Provoked at /vicky?name=vickyAcharjee&qid=22== 
+A new Request is recieved at 1706161206200 & The URL Provoked at / and the method is GET 
+A new Request is recieved at 1706161333474 & The URL Provoked at / and the method is GET 
+A new Request is recieved at 1706168229316 & The URL Provoked at / and the method is GET 
+A new Request is recieved at 1706168229801 & The URL Provoked at / and the method is GET 
+A new Request is recieved at 1706168230034 & The URL Provoked at / and the method is GET 
+A new Request is recieved at 1706168230233 & The URL Provoked at / and the method is GET 
+A new Request is recieved at 1706168234463 & The URL Provoked at /about and the method is GET 
+A new Request is recieved at 1706168242415 & The URL Provoked at /about?myName=vicky and the method is GET 
+A new Request is recieved at 1706168271545 & The URL Provoked at /vicky?myName=vicky and the method is GET 
+A new Request is recieved at 1706168284413 & The URL Provoked at /vicky?name=vicky and the method is GET 
+A new Request is recieved at 1706168346339 & The URL Provoked at /vicky?name=vicky and the method is GET 
+A new Request is recieved at 1706168346607 & The URL Provoked at /vicky?name=vicky and the method is GET 
+A new Request is recieved at 1706168346818 & The URL Provoked at /vicky?name=vicky and the method is GET 
+A new Request is recieved at 1706168353505 & The URL Provoked at /vicky?qid=vicky and the method is GET 
+A new Request is recieved at 1706168372137 & The URL Provoked at /vicky?qid=vicky&name=vickuy and the method is GET 
+A new Request is recieved at 1706168386114 & The URL Provoked at /vicky?qid=123&name=vicky and the method is GET 
+A new Request is recieved at 1706169474708 & The URL Provoked at /vicky?name=vicky and the method is GET 
+A new Request is recieved at 1706169487488 & The URL Provoked at /vicky?name=vicky&qiiid=2 and the method is GET 
+A new Request is recieved at 1706169496849 & The URL Provoked at /vicky?name=vicky&qid=2 and the method is GET 

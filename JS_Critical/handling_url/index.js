@@ -5,7 +5,7 @@ const url=require('url');
 
 const myServer=http.createServer((req,res)=>{
 if(req.url==='/favicon.ico') return res.end();
-const log=`A new Request is recieved at ${Date.now()} & The URL Provoked at ${req.url} \n`
+const log=`A new Request is recieved at ${Date.now()} & The URL Provoked at ${req.url} and the method is ${req.method} \n`
 const myUrl =url.parse(req.url,true);
 console.log(myUrl);
 
@@ -24,6 +24,8 @@ console.log(myUrl);
 //   path: '/about?myName=vicky', //here the gives me the complete address 
 //   href: '/about?myName=vicky'
 // }
+
+
 
 fs.appendFile('log.txt',log,(error,data)=>{
     switch (myUrl.pathname) {
