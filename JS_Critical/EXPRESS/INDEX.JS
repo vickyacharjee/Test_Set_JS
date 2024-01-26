@@ -49,4 +49,11 @@ app.get('/about',(req,res)=>{
     res.end("hey about page here")
 })
 
+//For getting the date
+const currentDate = new Date();
+const formattedDate = currentDate.toISOString();
+app.get('/vicky',(req,res)=>{
+    res.end(`hey ${req.query.name} here and todays date is ${formattedDate}`)
+})
+
 app.listen(8000,()=>console.log("Ok Server Created"))
