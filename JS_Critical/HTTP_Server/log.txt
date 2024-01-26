@@ -201,3 +201,5 @@
 1706096716247 as Request Recieved in 8000 and url seek for /favicon.ico 
 1706096720665 as Request Recieved in 8000 and url seek for /home 
 1706096720684 as Request Recieved in 8000 and url seek for /favicon.ico 
+1706291329324 as Request Recieved in 8000 and url seek for / 
+1706291329970 as Request Recieved in 8000 and url seek for /favicon.ico 
