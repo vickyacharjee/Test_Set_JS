@@ -2,10 +2,11 @@ const http=require('http');
 const fs=require('fs');
 const url=require('url');
 
-
+const currentDate=new Date;
+const formatDate=currentDate.toISOString();
 const myServer=http.createServer((req,res)=>{
 if(req.url==='/favicon.ico') return res.end();
-const log=`A new Request is recieved at ${Date.now()} & The URL Provoked at ${req.url} and the method is ${req.method} \n`
+const log=`A new Request is recieved at ${formatDate} & The URL Provoked at ${req.url} and the method is ${req.method} \n`
 const myUrl =url.parse(req.url,true);
 console.log(myUrl);
 

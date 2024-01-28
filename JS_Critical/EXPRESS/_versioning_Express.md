@@ -12,8 +12,6 @@ a library or a module and publishing it to npm, consider using tags for releases
 
 
 
-
-
 In npm package versioning, the caret (^) symbol is used in the dependencies or devDependencies section of the package.json file. It indicates a range of compatible versions for a package.
 
 Here's how it works:

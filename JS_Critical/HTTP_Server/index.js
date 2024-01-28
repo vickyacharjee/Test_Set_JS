@@ -40,7 +40,7 @@ const mySever=http.createServer((req,res)=>{
                 break;
 
              case '/home': res.end('This is HOME Section')
-                break;    
+                        break;    
           
              case '/vicky': res.end('This is VICKY Section')
                 break;    
