@@ -2,9 +2,12 @@ a library or a module and publishing it to npm, consider using tags for releases
  Common tags include major, minor, and patch. 
 
  version-> 4.18.2
- so, 4 is major (uses as strict Increment the MAJOR version when you make incompatible API changes.)
-     18 is minor (Recommended bug fixes, as secutity piont of view Increment the MINOR version when you add functionality in a backward-compatible manner.)
-     2 patch (very basic Increment the PATCH version when you make backward-compatible bug fixes.)
+ so,  
+##4 is major (uses as strict Increment the MAJOR version when you make incompatible API changes.)  
+ 
+##18 is minor (Recommended bug fixes, as secutity piont of view Increment the MINOR version when you add functionality in a backward-compatible manner.)  
+
+##2 patch (very basic Increment the PATCH version when you make backward-compatible bug fixes.)
 
 
 
