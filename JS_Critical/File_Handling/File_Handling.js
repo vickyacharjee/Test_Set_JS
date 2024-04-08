@@ -212,11 +212,11 @@ const fs=require('fs');
 // program starts here
 
 //creating a new File 
-// fs.writeFileSync('./test.txt','Hey there, here we have created file using writefilesync method');//success 2 parameters [fileName] [fileContent]
+// fs.writeFileSync('./test.txt','hello');//success 2 parameters [fileName] [fileContent]
 
 //Reading an Existing form test.txt
-// const ReadName=fs.readFileSync('./test.txt','utf8') 
-// console.log(ReadName);//Success
+const ReadName=fs.readFileSync('./test.txt','utf8') 
+console.log(ReadName);//Success
 
 //using appendFileSync
 // fs.appendFileSync("./test.txt",`${Date.now().toString()} \n`);
@@ -227,9 +227,9 @@ const fs=require('fs');
 //unLinkSync for deleting
 // fs.unlinkSync('./test.txt');
 
-//status of a file using statSync
-// const stat=fs.statSync('./test.txt').isFile;
-// console.log(stat);
+// status of a file using statSync
+const stat=fs.statSync('./test.txt').isFile;
+console.log(stat);
 
 //mkdir for making an directory
 // fs.mkdirSync('mkdirFile2');
